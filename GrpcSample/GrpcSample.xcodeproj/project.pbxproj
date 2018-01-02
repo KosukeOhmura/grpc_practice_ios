@@ -15,6 +15,10 @@
 		8D67071D1FFBED910000012C /* GrpcSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D67071C1FFBED910000012C /* GrpcSampleTests.swift */; };
 		8D6707281FFBED910000012C /* GrpcSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6707271FFBED910000012C /* GrpcSampleUITests.swift */; };
 		8D6707381FFBF4680000012C /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6707371FFBF4680000012C /* SwiftProtobuf.framework */; };
+		8D67077B1FFC000C0000012C /* BoringSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D67077F1FFC000C0000012C /* BoringSSL.framework */; };
+		8D67077C1FFC000C0000012C /* CgRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6707801FFC000C0000012C /* CgRPC.framework */; };
+		8D67077D1FFC000C0000012C /* Czlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6707811FFC000C0000012C /* Czlib.framework */; };
+		8D67077E1FFC000C0000012C /* gRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6707821FFC000C0000012C /* gRPC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		8D6707271FFBED910000012C /* GrpcSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrpcSampleUITests.swift; sourceTree = "<group>"; };
 		8D6707291FFBED910000012C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D6707371FFBF4680000012C /* SwiftProtobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftProtobuf.framework; path = Carthage/Build/iOS/SwiftProtobuf.framework; sourceTree = "<group>"; };
+		8D67077F1FFC000C0000012C /* BoringSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BoringSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D6707801FFC000C0000012C /* CgRPC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CgRPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D6707811FFC000C0000012C /* Czlib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Czlib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D6707821FFC000C0000012C /* gRPC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gRPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D67077B1FFC000C0000012C /* BoringSSL.framework in Frameworks */,
+				8D67077C1FFC000C0000012C /* CgRPC.framework in Frameworks */,
+				8D67077D1FFC000C0000012C /* Czlib.framework in Frameworks */,
+				8D67077E1FFC000C0000012C /* gRPC.framework in Frameworks */,
 				8D6707381FFBF4680000012C /* SwiftProtobuf.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +144,10 @@
 		8D6707361FFBF4680000012C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D67077F1FFC000C0000012C /* BoringSSL.framework */,
+				8D6707801FFC000C0000012C /* CgRPC.framework */,
+				8D6707811FFC000C0000012C /* Czlib.framework */,
+				8D6707821FFC000C0000012C /* gRPC.framework */,
 				8D6707371FFBF4680000012C /* SwiftProtobuf.framework */,
 			);
 			name = Frameworks;
