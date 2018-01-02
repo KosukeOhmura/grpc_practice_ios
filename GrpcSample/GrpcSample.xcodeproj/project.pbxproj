@@ -14,6 +14,7 @@
 		8D6707121FFBED910000012C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D6707101FFBED910000012C /* LaunchScreen.storyboard */; };
 		8D67071D1FFBED910000012C /* GrpcSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D67071C1FFBED910000012C /* GrpcSampleTests.swift */; };
 		8D6707281FFBED910000012C /* GrpcSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6707271FFBED910000012C /* GrpcSampleUITests.swift */; };
+		8D6707381FFBF4680000012C /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6707371FFBF4680000012C /* SwiftProtobuf.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8D6707231FFBED910000012C /* GrpcSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrpcSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D6707271FFBED910000012C /* GrpcSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrpcSampleUITests.swift; sourceTree = "<group>"; };
 		8D6707291FFBED910000012C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D6707371FFBF4680000012C /* SwiftProtobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftProtobuf.framework; path = Carthage/Build/iOS/SwiftProtobuf.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D6707381FFBF4680000012C /* SwiftProtobuf.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				8D67071B1FFBED910000012C /* GrpcSampleTests */,
 				8D6707261FFBED910000012C /* GrpcSampleUITests */,
 				8D6707051FFBED910000012C /* Products */,
+				8D6707361FFBF4680000012C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +129,14 @@
 			path = GrpcSampleUITests;
 			sourceTree = "<group>";
 		};
+		8D6707361FFBF4680000012C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D6707371FFBF4680000012C /* SwiftProtobuf.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +147,7 @@
 				8D6707001FFBED910000012C /* Sources */,
 				8D6707011FFBED910000012C /* Frameworks */,
 				8D6707021FFBED910000012C /* Resources */,
+				8D6707351FFBF44F0000012C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -253,6 +266,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D6707351FFBF44F0000012C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftProtobuf.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftProtobuf.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D6707001FFBED910000012C /* Sources */ = {
@@ -428,6 +459,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2VTDZ4T2M9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GrpcSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.kosukeohmura.GrpcSample;
@@ -443,6 +478,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2VTDZ4T2M9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GrpcSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.kosukeohmura.GrpcSample;
