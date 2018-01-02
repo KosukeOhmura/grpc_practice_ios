@@ -48,11 +48,7 @@ playground.xcworkspace
 # Pods/
 
 # Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-Carthage/Build
+Carthage
 
 # fastlane
 #
@@ -66,7 +62,6 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 
-Gem
-
+# Gem
 .bundle/
 vendor/
