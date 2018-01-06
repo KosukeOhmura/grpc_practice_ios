@@ -1,0 +1,3 @@
+[submodule "GrpcSample/grpc-swift"]
+	path = GrpcSample/grpc-swift
+	url = git@github.com:grpc/grpc-swift.git

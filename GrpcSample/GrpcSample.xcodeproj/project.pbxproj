@@ -15,10 +15,10 @@
 		8D67071D1FFBED910000012C /* GrpcSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D67071C1FFBED910000012C /* GrpcSampleTests.swift */; };
 		8D6707281FFBED910000012C /* GrpcSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6707271FFBED910000012C /* GrpcSampleUITests.swift */; };
 		8D6707381FFBF4680000012C /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6707371FFBF4680000012C /* SwiftProtobuf.framework */; };
-		8D67077B1FFC000C0000012C /* BoringSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D67077F1FFC000C0000012C /* BoringSSL.framework */; };
-		8D67077C1FFC000C0000012C /* CgRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6707801FFC000C0000012C /* CgRPC.framework */; };
-		8D67077D1FFC000C0000012C /* Czlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6707811FFC000C0000012C /* Czlib.framework */; };
-		8D67077E1FFC000C0000012C /* gRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6707821FFC000C0000012C /* gRPC.framework */; };
+		8DA10DB72000994A001549A7 /* BoringSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA10D9F20009935001549A7 /* BoringSSL.framework */; };
+		8DA10DB82000994A001549A7 /* CgRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA10D9D20009935001549A7 /* CgRPC.framework */; };
+		8DA10DB92000994A001549A7 /* Czlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA10DA320009935001549A7 /* Czlib.framework */; };
+		8DA10DBA2000994A001549A7 /* gRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA10D9B20009935001549A7 /* gRPC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,48 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8D6707031FFBED910000012C;
 			remoteInfo = GrpcSample;
+		};
+		8DA10D9620009935001549A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DA10D8820009935001549A7 /* SwiftGRPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "SwiftGRPC::RootsEncoder::Product";
+			remoteInfo = RootsEncoder;
+		};
+		8DA10D9820009935001549A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DA10D8820009935001549A7 /* SwiftGRPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "SwiftGRPC::gRPCTests::Product";
+			remoteInfo = gRPCTests;
+		};
+		8DA10D9A20009935001549A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DA10D8820009935001549A7 /* SwiftGRPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "SwiftGRPC::gRPC::Product";
+			remoteInfo = gRPC;
+		};
+		8DA10D9C20009935001549A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DA10D8820009935001549A7 /* SwiftGRPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "SwiftGRPC::CgRPC::Product";
+			remoteInfo = CgRPC;
+		};
+		8DA10D9E20009935001549A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DA10D8820009935001549A7 /* SwiftGRPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "SwiftGRPC::BoringSSL::Product";
+			remoteInfo = BoringSSL;
+		};
+		8DA10DA220009935001549A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DA10D8820009935001549A7 /* SwiftGRPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "zlib::Czlib::Product";
+			remoteInfo = Czlib;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -57,6 +99,7 @@
 		8D6707801FFC000C0000012C /* CgRPC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CgRPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D6707811FFC000C0000012C /* Czlib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Czlib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D6707821FFC000C0000012C /* gRPC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gRPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA10D8820009935001549A7 /* SwiftGRPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftGRPC.xcodeproj; path = "grpc-swift/SwiftGRPC.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +107,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D67077B1FFC000C0000012C /* BoringSSL.framework in Frameworks */,
-				8D67077C1FFC000C0000012C /* CgRPC.framework in Frameworks */,
-				8D67077D1FFC000C0000012C /* Czlib.framework in Frameworks */,
-				8D67077E1FFC000C0000012C /* gRPC.framework in Frameworks */,
+				8DA10DB72000994A001549A7 /* BoringSSL.framework in Frameworks */,
+				8DA10DB82000994A001549A7 /* CgRPC.framework in Frameworks */,
+				8DA10DB92000994A001549A7 /* Czlib.framework in Frameworks */,
+				8DA10DBA2000994A001549A7 /* gRPC.framework in Frameworks */,
 				8D6707381FFBF4680000012C /* SwiftProtobuf.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +135,7 @@
 		8D6706FB1FFBED910000012C = {
 			isa = PBXGroup;
 			children = (
+				8DA10D8820009935001549A7 /* SwiftGRPC.xcodeproj */,
 				8D6707061FFBED910000012C /* GrpcSample */,
 				8D67071B1FFBED910000012C /* GrpcSampleTests */,
 				8D6707261FFBED910000012C /* GrpcSampleUITests */,
@@ -151,6 +195,19 @@
 				8D6707371FFBF4680000012C /* SwiftProtobuf.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DA10D8920009935001549A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DA10D9720009935001549A7 /* RootsEncoder */,
+				8DA10D9920009935001549A7 /* gRPCTests.xctest */,
+				8DA10D9B20009935001549A7 /* gRPC.framework */,
+				8DA10D9D20009935001549A7 /* CgRPC.framework */,
+				8DA10D9F20009935001549A7 /* BoringSSL.framework */,
+				8DA10DA320009935001549A7 /* Czlib.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +304,12 @@
 			mainGroup = 8D6706FB1FFBED910000012C;
 			productRefGroup = 8D6707051FFBED910000012C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8DA10D8920009935001549A7 /* Products */;
+					ProjectRef = 8DA10D8820009935001549A7 /* SwiftGRPC.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8D6707031FFBED910000012C /* GrpcSample */,
@@ -255,6 +318,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8DA10D9720009935001549A7 /* RootsEncoder */ = {
+			isa = PBXReferenceProxy;
+			fileType = text;
+			path = RootsEncoder;
+			remoteRef = 8DA10D9620009935001549A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8DA10D9920009935001549A7 /* gRPCTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = file;
+			path = gRPCTests.xctest;
+			remoteRef = 8DA10D9820009935001549A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8DA10D9B20009935001549A7 /* gRPC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = gRPC.framework;
+			remoteRef = 8DA10D9A20009935001549A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8DA10D9D20009935001549A7 /* CgRPC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CgRPC.framework;
+			remoteRef = 8DA10D9C20009935001549A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8DA10D9F20009935001549A7 /* BoringSSL.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BoringSSL.framework;
+			remoteRef = 8DA10D9E20009935001549A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8DA10DA320009935001549A7 /* Czlib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Czlib.framework;
+			remoteRef = 8DA10DA220009935001549A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D6707021FFBED910000012C /* Resources */ = {
