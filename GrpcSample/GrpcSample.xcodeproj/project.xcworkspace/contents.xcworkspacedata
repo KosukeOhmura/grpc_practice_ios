@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../SwiftGRPC.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "self:GrpcSample.xcodeproj">
    </FileRef>
 </Workspace>

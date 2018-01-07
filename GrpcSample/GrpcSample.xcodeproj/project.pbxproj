@@ -19,6 +19,8 @@
 		8DA10DB82000994A001549A7 /* CgRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA10D9D20009935001549A7 /* CgRPC.framework */; };
 		8DA10DB92000994A001549A7 /* Czlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA10DA320009935001549A7 /* Czlib.framework */; };
 		8DA10DBA2000994A001549A7 /* gRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA10D9B20009935001549A7 /* gRPC.framework */; };
+		8DA10DD32000FACA001549A7 /* echo.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA10DD12000FAC9001549A7 /* echo.pb.swift */; };
+		8DA10DD42000FACA001549A7 /* echo.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA10DD22000FACA001549A7 /* echo.grpc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 		8D6707811FFC000C0000012C /* Czlib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Czlib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D6707821FFC000C0000012C /* gRPC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gRPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA10D8820009935001549A7 /* SwiftGRPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftGRPC.xcodeproj; path = "grpc-swift/SwiftGRPC.xcodeproj"; sourceTree = "<group>"; };
+		8DA10DD12000FAC9001549A7 /* echo.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = echo.pb.swift; path = Protoc/generated/proto/echo.pb.swift; sourceTree = SOURCE_ROOT; };
+		8DA10DD22000FACA001549A7 /* echo.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = echo.grpc.swift; path = Protoc/generated/proto/echo.grpc.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,8 @@
 		8D6707061FFBED910000012C /* GrpcSample */ = {
 			isa = PBXGroup;
 			children = (
+				8DA10DD22000FACA001549A7 /* echo.grpc.swift */,
+				8DA10DD12000FAC9001549A7 /* echo.pb.swift */,
 				8D6707071FFBED910000012C /* AppDelegate.swift */,
 				8D6707091FFBED910000012C /* ViewController.swift */,
 				8D67070B1FFBED910000012C /* Main.storyboard */,
@@ -415,7 +421,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D67070A1FFBED910000012C /* ViewController.swift in Sources */,
+				8DA10DD32000FACA001549A7 /* echo.pb.swift in Sources */,
 				8D6707081FFBED910000012C /* AppDelegate.swift in Sources */,
+				8DA10DD42000FACA001549A7 /* echo.grpc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +595,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/grpc-swift/Sources/CgRPC/include/**";
 				INFOPLIST_FILE = GrpcSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.kosukeohmura.GrpcSample;
@@ -606,6 +615,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/grpc-swift/Sources/CgRPC/include/**";
 				INFOPLIST_FILE = GrpcSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.kosukeohmura.GrpcSample;
